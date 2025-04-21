@@ -1,7 +1,7 @@
 import React from "react";
 import BotCard from "./BotCard";
 
-function BotCollection({ bots, army }) {
+function BotCollection({ bots, onClick }) {
   return (
     <div>
       <h2 style={{margin:'20px 0px'}}>Bot Collection</h2>
@@ -9,8 +9,8 @@ function BotCollection({ bots, army }) {
         {bots.map(bot => (
           <BotCard 
             key={bot.id} 
-            bot={bot} 
-            army={army} 
+            bot={bot}
+            onClick={onClick}
           />
         ))}
       </div>
