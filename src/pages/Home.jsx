@@ -54,7 +54,6 @@ function Home() {
       <p className='justify-center text-xl my-lg'>Welcome to **Bot Battlr**, the one and only spot in the known <br/>universe where you can custom build your own Bot Army! This is our app:</p>
       <BotCollection 
         bots={bots} 
-        army={army}
         onClick={addToArmy}
       />
     </div>

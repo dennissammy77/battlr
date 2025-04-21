@@ -12,12 +12,14 @@ function MyBotArmy() {
       .then(setArmy)
       .catch((err) => console.error("Error fetching army:", err));
   }, []);
-  // Remove bot from the army (does not delete)
+
+  // Remove bot from the army does not delete bot
   function removeFromArmy(bot) {
     setArmy(army.filter((b) => b.id !== bot.id));
     alert("This bot has been released from your army")
-  }
-  // Remove bot from the army 
+  };
+
+  // discharge bot from the army deletes bot
   function dischargeBot(botId) {
     fetch(`http://localhost:3000/army/${botId}`, {
       method: "DELETE",
@@ -31,7 +33,8 @@ function MyBotArmy() {
       }
     })
     .catch((err) => console.error("Error discharging bot:", err));
-  }
+  };
+  
   return (
     <div className='container'>
       <Header />
