@@ -1,12 +1,48 @@
-# React + Vite
+# 🤖 Bot Battlr
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application for managing your army of bots! Choose, enlist, and discharge bots with unique stats, classes, and catchphrases. Built with React and powered by a mock JSON server backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- View all bots in a card-based layout.
+- Enlist a bot into your army (one instance only).
+- Release a bot from the army (removes it from the army only).
+- RESTful interactions using `json-server`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React (Frontend)
+- JSON Server (Mock Backend)
+- JavaScript (ES6)
+- HTML/CSS (basic styling)
+
+---
+
+## 📁 Project Setup
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/dennissammy77/battlr.git
+cd battlr
+
+npm install
+```
+
+### 2. Setup json-server
+Test your server by visiting this route in the browser:
+`http://localhost:8001/bots`
+
+```bash
+npx json-server --watch db.json
+```
+
+### 3. Start Frontend
+In a separate terminal:
+```bash
+npm run dev
+```
