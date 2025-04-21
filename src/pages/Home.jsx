@@ -1,7 +1,6 @@
 import Header from '../components/Header';
 import React, { useEffect, useState } from "react";
 import BotCollection from "../components/BotCollection";
-import YourBotArmy from "../components/YourBotArmy";
 
 function Home() {
   const [bots, setBots] = useState([]);

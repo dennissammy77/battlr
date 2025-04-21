@@ -66,6 +66,7 @@
   text-align: center;
   background-color: #f8f9fa;
   color: #000;
+  overflow: hidden;
 }
 .bot-card img{
   border: 1px solid #ccc;
